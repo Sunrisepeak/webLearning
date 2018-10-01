@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML超链接</title>
+</head>
+<body>
+    <div>
+        <!--基本的超链接标签,通过href属性指定链接的目标URL-->
+        <a href="http://www.cnblogs.com/sunyunh/">我的博客</a>
+
+        <!--站内链接，相对URL-->
+        <a href="/index.html">首页</a>
+
+        <!--title属性，指定当鼠标停在超链接上时显示的文本-->
+        <a href="http://www.cnblogs.com/sunyunh/" title="随心而动的博客！">我的博客</a>
+
+        <!--使用 Target 属性，你可以定义被链接的文档在何处显示。
+        target取值：
+            _blank:在新窗口中打开
+            _self：在当前页面打开,默认
+            _top:在浏览器的窗口打开
+            _parent:在父窗口打开
+        -->
+        <a href="http://www.cnblogs.com/sunyunh/" title="随心而动的博客！" target="_blank">我的博客</a>
+
+        <!--在这里定义一个锚记链接的命名锚,方法是指定name属性：name="锚名称"-->
+        <a name="">UsefulanchorName Tips Section</a>
+
+        <p>
+            <!--这是一个图片超链接，将img标签作为超链接的对象即可-->
+            <a href="../HTML超链接.html" title="HTML超链接语法">
+                <img src="http://www.cnblogs.com/图片/m.jpg" border="0" alt="图片链接" />
+            </a>
+        </p>
+
+        <!--链接到命名锚记-->
+        <a href="#anchorName">转到anchorName(Useful Tips Section)</a>
+
+        <!--创建从另一个页面指向该文档中“anchorName”部分的链接
+            方法是：将 # 符号和锚名称添加到 URL 的末端，就可以直接链接到 anchorName 这个命名锚了。
+        -->
+        <a href="http://www.w3school.com.cn/html_links.htm#anchorName">
+            Visit the Useful Tips Section （anchorName)
+        </a>
+       
+       <!--邮件链接，指定href属性为mailto:Email地址-->
+        <a href="mailto:someone@gmail.com">我的Gmail邮箱</a>
+
+        <!--FTP链接，指定href属性为ftp://FTP地址-->
+        <a href="ftp://101.22.25.11">连接FTP服务器</a>
+
+        <!--Telnet，指定href属性为telnet://Telnet地址-->
+        <a href="telnet://101.22.25.11">连接Telnet服务器</a>
+
+    </div>
+</body>
+</html>
